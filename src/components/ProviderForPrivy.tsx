@@ -55,11 +55,7 @@ interface ChainConfig {
   });
 
 export default function ProviderForPrivy({children}: {children: React.ReactNode}) {
-  let appId = "cm33h9snb06g7whuebsnpjttd" || "default-app-id";
-
-  if (appId === "default-app-id") {
-    console.error("APP_ID is not set in the environment. Using fallback APP_ID.");
-  }
+  let appId = "cm33h9snb06g7whuebsnpjttd";
 
   return (
     <PrivyProvider
